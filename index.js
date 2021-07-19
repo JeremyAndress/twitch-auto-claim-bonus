@@ -5,11 +5,11 @@ const ariaLabelLang = {
   "es-ES": "Reclamar bonificación",
 };
 
-function reclaimButton() {
+const reclaimButton = () => {
   const buttonClaim = document.querySelector(
     `button[aria-label="${ariaLabelLang[navigatorLang]}"]`
   );
   buttonClaim && buttonClaim.click();
-}
+};
 
 setInterval(reclaimButton, 4000);
